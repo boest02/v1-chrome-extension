@@ -1,3 +1,6 @@
+
+const _WAIT_TIME = 2500; // waiting for v1 data to fill
+
 // Create style element
 const style = document.createElement('style');
 
@@ -18,8 +21,11 @@ const headerCheck = (h) => {
     let value = parseInt(h.querySelector('.card-count-container .value').innerText);
     let button = h.querySelector('.collapseButton');
     
-    // collapse zero counts, if no collapsed
+    // collapse zero counts, if not collapsed
     !h.classList.contains('collapsed') && !value && button.click();
+    
+    // expand non-zero counts, if collapsed
+    h.classList.contains('collapsed') && value && button.click();
 };
 
 const checkHeaders = () => {
@@ -31,4 +37,4 @@ const checkHeaders = () => {
 };
 
 // wait for data to load
-setTimeout(checkHeaders, 1500);
+setTimeout(checkHeaders, _WAIT_TIME);

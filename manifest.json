@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Version 1 Extension",
+    "description": "Helper for Version 1",
+    "version": "1.0",
+    "content_scripts": [
+        {
+          "matches": ["*://*.v1host.com/*"],
+          "css": ["style1.css"],
+          "js": ["test.js"],
+          "run_at": "document_idle"
+        }
+      ]
+}

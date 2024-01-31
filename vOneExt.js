@@ -7,8 +7,25 @@ const style = document.createElement('style');
 // Add CSS rules 
 style.innerHTML = `
 [aria-labelledby="title"] + a {
-    width: 400px;
-    border: 1px solid goldenrod;
+    min-width: 400px;
+}
+.persona-filters {
+    overflow: unset !important;
+}
+.persona-filters ul {
+    overflow: unset !important;
+}
+li.owner {
+    min-width: 40px;
+}
+li.owner:hover {
+    transform: scale(2) translate(0, 10px);
+    font-weight: bold;
+}
+li.owner.selected {
+    border: 1px solid lime !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
 }`;
 
 console.log("v1.ext: Loading CSS", style);

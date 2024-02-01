@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>V1 Options</title>
+    <link rel="stylesheet" href="./options.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Choose V1 features:</legend>
+
+        <div>
+            <input type="checkbox" id="collapse" name="collapse" checked />
+            <label for="collapse">Collapse Columns</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="owners-hover" name="owners-hover" />
+            <label for="owners-hover">Hover on Owners</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="owners-highlight" name="owners-highlight" />
+            <label for="owners-highlight">Highlight Active Owner</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="title-width" name="title-width" />
+            <label for="title-width">List View Title Width</label>
+        </div>
+    </fieldset>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+    <a href="../popup/popup.html">Back</a>
+
+    <script src="options.js"></script>
+</body>
+
+</html>

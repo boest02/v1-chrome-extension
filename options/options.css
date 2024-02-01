@@ -1,0 +1,15 @@
+body {
+    width: 350px;
+    height: 175px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: goldenrod;   
+}
+
+#status {
+    margin: 5px 0;        
+}
+#status > * {
+    margin-right: 10px;
+}

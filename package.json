@@ -1,0 +1,11 @@
+{
+  "name": "v1-ext",
+  "version": "1.0.0",
+  "description": "chrome extension for v1",
+  "main": "index.js",
+  "scripts": {
+    "build": "zip -r dist/bundle.zip images/ js/ options/ popup/ manifest.json"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}
